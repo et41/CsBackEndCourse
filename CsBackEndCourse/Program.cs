@@ -9,6 +9,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CsBackEndCourse
 {
     internal class Program
@@ -61,6 +62,10 @@ namespace CsBackEndCourse
             HomeWork1 h1 = new HomeWork1();
             int sum = h1.Sum(number, c);
             Console.WriteLine("Toplam:" + sum);
+
+            //Json Serialize and Deserialize
+            HomeWork3 h3 = new HomeWork3();
+            h3.ExSerial(names);
 
         }
     }
