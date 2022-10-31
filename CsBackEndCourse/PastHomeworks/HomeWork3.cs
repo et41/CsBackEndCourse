@@ -34,7 +34,7 @@ namespace CsBackEndCourse
             string jsonString = JsonSerializer.Serialize(all_users, options);
 
             File.WriteAllText(fileName, jsonString);
-            Console.WriteLine(File.ReadAllText(fileName));
+            //Console.WriteLine(File.ReadAllText(fileName));
         }
     }
 }
