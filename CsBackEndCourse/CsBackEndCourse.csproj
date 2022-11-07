@@ -76,9 +76,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HomeWork4.cs" />
-    <Compile Include="HomeWork5.cs" />
-    <Compile Include="HomeWork6.cs" />
+    <Compile Include="PastHomeworks\HomeWork7.cs" />
+    <Compile Include="PastHomeworks\HomeWork4.cs" />
+    <Compile Include="PastHomeworks\HomeWork5.cs" />
+    <Compile Include="PastHomeworks\HomeWork6.cs" />
     <Compile Include="PastHomeworks\HomeWork1.cs" />
     <Compile Include="PastHomeworks\HomeWork2.cs" />
     <Compile Include="PastHomeworks\HomeWork3.cs" />

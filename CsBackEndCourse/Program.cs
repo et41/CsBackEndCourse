@@ -74,6 +74,10 @@ namespace CsBackEndCourse
             */
             #endregion
 
+            
+            
+            #region
+            /*
             HomeWork2 h2 = new HomeWork2();
             var all_students = h2.AllUsers(names);
 
@@ -123,11 +127,37 @@ namespace CsBackEndCourse
                         Console.WriteLine($"{item.Id}: {item.Name}");
                     }
                 }
-                connection.Close();
+                connection.Close();:w
+            
             }
- 
 
+            //Interface
+            HomeWork7.Circle circle = new HomeWork7.Circle();
+            circle.Radius = 3;
+            var area = circle.GetArea();
+            Console.WriteLine("Circle area: " + area);
 
+            HomeWork7.Rectangle rectangle = new HomeWork7.Rectangle();
+            rectangle.Width = 5;
+            rectangle.Height = 4;
+            area = rectangle.GetArea();
+            Console.WriteLine("Rectangle area: " + area);
+
+            HomeWork7.IAreaCalculator myCalc = new HomeWork7.Circle()
+            {
+                Radius = 2
+            };
+            HomeWork7.IAreaCalculator2 myCalc2 = new HomeWork7.Circle()
+            {
+                Radius = 3
+            };
+            Console.WriteLine($"{myCalc.GetArea()} {myCalc2.GetArea2()}");
+            double area3 = myCalc2.GetArea();
+            Console.WriteLine(area3);*/
+            #endregion
+        
+        
+        
         }
         public class Student
         {
