@@ -74,8 +74,8 @@ namespace CsBackEndCourse
             */
             #endregion
 
-            
-            
+
+
             #region
             /*
             HomeWork2 h2 = new HomeWork2();
@@ -155,10 +155,47 @@ namespace CsBackEndCourse
             double area3 = myCalc2.GetArea();
             Console.WriteLine(area3);*/
             #endregion
-        
+            GenericArray<int> intArray = new GenericArray<int>(5);
+            for (int i = 0; i < 5; i++)
+            {
+                intArray.setItem(i, i * 5);
+            }
+            for(int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(intArray.getItem(i) + " ");
+            }
+
+            //declaring char array
+            GenericArray<char> charArray = new GenericArray<char>(5);
+            for (int i = 0; i < 5; i++)
+            {
+                charArray.setItem(i, (char)(i + 97));
+            }
+
+            for(int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(charArray.getItem(i) + "");
+            }
         
         
         }
+        public class GenericArray<T>
+        {
+            private T[] array;
+            public GenericArray(int size)
+            {
+                array = new T[size + 1];
+            }
+            public T getItem(int index)
+            {
+                return array[index];
+            }
+            public void setItem(int index, T value)
+            {
+                array[index] = value;
+            }
+        }
+
         public class Student
         {
             public int Id { get; set; }
