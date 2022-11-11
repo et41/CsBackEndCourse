@@ -176,8 +176,16 @@ namespace CsBackEndCourse
             {
                 Console.WriteLine(charArray.getItem(i) + "");
             }
-        
-        
+
+            //Factory
+            HomeWork10.Factory factory = new HomeWork10.Factory();
+            HomeWork10.Shape circle = factory.FactoryMethod(HomeWork10.Shapes.Circle);
+            Console.WriteLine(circle.Area());
+            HomeWork10.Shape rectangle = factory.FactoryMethod(HomeWork10.Shapes.Rectangle);
+            Console.WriteLine(rectangle.Area());
+
+
+
         }
         public class GenericArray<T>
         {

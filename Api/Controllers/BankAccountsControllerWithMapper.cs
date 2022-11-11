@@ -24,7 +24,6 @@ namespace Api.Controllers
             var _mappedAccount = _mapper.Map<BankAccount>(account);
             await _context.Set<BankAccount>().AddAsync(_mappedAccount);
             await _context.SaveChangesAsync();
-
         }
     }
 }
